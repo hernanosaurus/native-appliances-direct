@@ -1,0 +1,291 @@
+:root {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-weight: normal;
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+button {
+  padding: 0.75rem 1rem !important;
+  border-radius: 0.5rem !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+button:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+button:active {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+h3,
+h4,
+h5 {
+  font-weight: 700;
+}
+
+h3 {
+  color: #18181b;
+  font-size: 2rem;
+}
+
+h4 {
+  color: #18181b;
+  font-size: 1.5rem;
+}
+
+h5 {
+  color: #18181b;
+  font-size: 1.25rem;
+}
+
+.p-xs {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.p-sm {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #71717a;
+}
+
+.p-md {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.primary-font-color {
+  color: #18181b;
+}
+
+.secondary-font-color {
+  color: #71717a;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.p-3 {
+  padding: 1rem;
+}
+
+.padding-sm {
+  padding: 1.25rem 1rem !important;
+}
+
+.padding-md {
+  padding: 2.5rem 1rem !important;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-6 {
+  margin-bottom: 0.75rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1.5rem;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.border {
+  border: 1px solid #e4e4e7;
+}
+
+.rounded-sm {
+  border-radius: 0.5rem;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.btn-primary {
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem !important;
+  border: 0;
+  background-color: #081a44;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: #02050e;
+}
+
+.btn-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  width: 20px;
+  height: 20px;
+  padding: 0.5rem !important;
+  background: none;
+}
+
+.btn-padding-sm {
+  padding: 0.75rem 1rem !important;
+}
+
+#content {
+  width: 100%;
+  max-width: 1200px;
+}
+
+#header {
+  height: 123px;
+  background: #ffffff;
+  border-bottom: 2px solid #000000;
+}
+#header div {
+  width: 100%;
+  max-width: 1200px;
+}
+
+#main-content {
+  max-width: 1200px;
+  height: calc(100vh - 295px);
+}
+@media (max-width: 767px) {
+  #main-content {
+    height: auto;
+    flex-direction: column;
+    padding: 1.25rem 1rem !important;
+  }
+  #main-content #desktop-nav {
+    display: none !important;
+  }
+  #main-content #mobile-nav {
+    display: block !important;
+  }
+}
+
+#desktop-nav {
+  min-width: 282px;
+}
+
+.navbar #nav-header p::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: url("../assets/info.svg") no-repeat center center;
+  background-size: contain;
+  margin-left: 0.5rem;
+}
+.navbar .navbar-toggler {
+  color: #18181b;
+  background-color: #f4f4f5;
+}
+.navbar .navbar-toggler i {
+  font-size: 1rem;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  color: #71717a;
+}
+.navbar .navbar-nav .nav-item .nav-link i,
+.navbar .navbar-nav .nav-item .nav-link span {
+  margin-right: 0.5rem;
+}
+.navbar .navbar-nav .nav-item .nav-link.active, .navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #18181b;
+  background: #f4f4f5;
+}
+.navbar .navbar-nav .nav-item:last-child {
+  margin-bottom: 0;
+}
+.navbar .navbar-nav .nav-item:last-child .nav-link {
+  color: #c5000c;
+}
+
+@media (max-width: 767px) {
+  section > #overview {
+    flex-direction: column;
+  }
+}
+
+#footer {
+  height: 172px;
+  border-top: 2px solid #000000;
+}
+#footer .footer-wrapper {
+  max-width: 1200px;
+}
+#footer .footer-wrapper #footer-logo p {
+  max-width: 220px;
+}
+@media (max-width: 767px) {
+  #footer .footer-wrapper #footer-list {
+    flex-direction: column;
+  }
+}
+@media (max-width: 767px) {
+  #footer .footer-wrapper {
+    flex-direction: column;
+  }
+}
+@media (max-width: 767px) {
+  #footer {
+    height: auto;
+  }
+}/*# sourceMappingURL=styles.css.map */

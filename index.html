@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Appliances Direct</title>
+  </head>
+  <body>
+    <!-- Header: Start -->
+    <header
+      id="header"
+      class="container-fluid d-flex align-items-center padding-sm"
+    >
+      <div class="container-fluid">
+        <a href="#">
+          <img
+            src="./assets/appliancesdirect_logo.png"
+            alt="Appliances Direct Logo"
+          />
+        </a>
+      </div>
+    </header>
+    <!-- Header: End -->
+
+    <!-- Main: Start -->
+    <main id="main-content" class="d-flex gap-4 w-100 padding-md">
+      <!-- Mobile navigation: Start -->
+      <nav id="mobile-nav" class="navbar d-none bg-white border rounded-sm p-3">
+        <div id="nav-header" class="mb-4">
+          <h4 class="mb-2">Hey, Name</h4>
+          <p class="p-sm relative">Credit balance to spend: £75.00</p>
+        </div>
+
+        <button
+          class="navbar-toggler d-flex justify-content-between align-items-center w-100 mb-6"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mobile-navbar"
+          aria-controls="mobile-navbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <p class="p-md d-flex gap-2"><i class="fas fa-bars"></i> Menu</p>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+
+        <ul class="navbar-nav collapse navbar-collapse" id="mobile-navbar">
+          <li class="nav-item w-100 mb-6">
+            <a class="nav-link btn-padding-sm rounded-sm active" data-link-id="1" href="#">
+              <i class="fas fa-home"></i>
+              Account overview
+            </a>
+          </li>
+          <li class="nav-item w-100 mb-6">
+            <a class="nav-link btn-padding-sm rounded-sm" data-link-id="2" href="#">
+              <i class="far fa-star"></i>
+              Membership
+            </a>
+          </li>
+          <li class="nav-item w-100 mb-6">
+            <a class="nav-link btn-padding-sm rounded-sm" data-link-id="3" href="#">
+              <i class="fas fa-box"></i>
+              Order History
+            </a>
+          </li>
+          <li class="nav-item w-100 mb-6">
+            <a class="nav-link btn-padding-sm rounded-sm" data-link-id="4" href="#">
+              <i class="fas fa-file-invoice"></i>
+              Account statement
+            </a>
+          </li>
+          <li class="nav-item w-100 mb-6">
+            <a class="nav-link btn-padding-sm rounded-sm" data-link-id="5" href="#">
+              <i class="far fa-credit-card"></i>
+              Payment methods
+            </a>
+          </li>
+          <li class="nav-item w-100 mb-6">
+            <a class="nav-link btn-padding-sm rounded-sm" data-link-id="6" href="#">
+              <i class="far fa-address-card"></i>
+              Account settings
+            </a>
+          </li>
+          <li class="nav-item w-100 mb-6">
+            <a class="nav-link btn-padding-sm rounded-sm" data-link-id="7" href="#">
+              <i class="far fa-comment-dots"></i>
+              Feedback
+            </a>
+          </li>
+          <li class="nav-item w-100 mb-6">
+            <a class="nav-link btn-padding-sm rounded-sm" data-link-id="8" href="#">
+              <i class="fas fa-sign-out-alt"></i>
+              Sign out
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Mobile navigation: End -->
+
+      <!-- Desktop navigation: Start -->
+      <nav id="desktop-nav"class="navbar bg-white border rounded-sm p-3 align-items-start">
+        <div class="container-fluid d-flex flex-column align-items-start">
+          <div id="nav-header" class="mb-4">
+            <h4 class="mb-2">Hey, Name</h4>
+            <p class="p-sm relative">Credit balance to spend: £75.00</p>
+          </div>
+
+          <ul class="navbar-nav w-100" id="desktop-navbar">
+            <li class="nav-item w-100 mb-6">
+              <a class="nav-link btn-padding-sm rounded-sm active" data-link-id="1" href="#">
+                <i class="fas fa-home"></i>
+                Account overview
+              </a>
+            </li>
+            <li class="nav-item w-100 mb-6">
+              <a class="nav-link btn-padding-sm rounded-sm" data-link-id="2" href="#">
+                <i class="far fa-star"></i>
+                Membership
+              </a>
+            </li>
+            <li class="nav-item w-100 mb-6">
+              <a class="nav-link btn-padding-sm rounded-sm" data-link-id="3" href="#">
+                <i class="fas fa-box"></i>
+                Order History
+              </a>
+            </li>
+            <li class="nav-item w-100 mb-6">
+              <a class="nav-link btn-padding-sm rounded-sm" data-link-id="4" href="#">
+                <i class="fas fa-file-invoice"></i>
+                Account statement
+              </a>
+            </li>
+            <li class="nav-item w-100 mb-6">
+              <a class="nav-link btn-padding-sm rounded-sm" data-link-id="5" href="#">
+                <i class="far fa-credit-card"></i>
+                Payment methods
+              </a>
+            </li>
+            <li class="nav-item w-100 mb-6">
+              <a class="nav-link btn-padding-sm rounded-sm" data-link-id="6" href="#">
+                <i class="far fa-address-card"></i>
+                Account settings
+              </a>
+            </li>
+            <li class="nav-item w-100 mb-6">
+              <a class="nav-link btn-padding-sm rounded-sm" data-link-id="7" href="#">
+                <i class="far fa-comment-dots"></i>
+                Feedback
+              </a>
+            </li>
+            <li class="nav-item w-100 mb-6">
+              <a class="nav-link btn-padding-sm rounded-sm" data-link-id="8" href="#">
+                <i class="fas fa-sign-out-alt"></i>
+                Sign out
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Desktop navigation: End -->
+
+      <section class="d-flex flex-column gap-4 w-100">
+        <!-- Page Title -->
+        <h3>Account overview</h3>
+
+        <!-- Overview: Start -->
+        <div id="overview" class="d-flex gap-4">
+          <div class="d-flex flex-column justify-content-between flex-1 bg-white border rounded-sm p-3">
+            <div class="container-fluid mb-4">
+              <h5 class="mb-2">Orders</h5>
+              <p>
+                You have
+                <a href="#" class="text-underline semi-bold">2 orders</a>
+                scheduled to be delivered
+                <strong>Tuesday 9th August</strong>
+              </p>
+            </div>
+
+            <button id="view-orders" class="btn-primary align-self-start">View orders</button>
+          </div>
+          <div class="d-flex flex-column justify-content-between flex-1 bg-white border rounded-sm p-3">
+            <div class="container-fluid mb-4">
+              <h5 class="mb-2">Payment Details</h5>
+              <p>You have <strong>3 linked cards</strong></p>
+            </div>
+
+            <button id="view-details" class="btn-primary align-self-start">View details</button>
+          </div>
+        </div>
+        <!-- Overview: End -->
+
+        <!-- Deals: Start -->
+        <div id="deals">
+          <div class="d-flex flex-column justify-content-between flex-1 bg-white border rounded-sm p-3">
+            <div class="container-fluid mb-3">
+              <h5 class="d-flex justify-content-between mb-2">Don't miss any deals
+                <button id="close" class="btn-icon">
+                  <i class="fas fa-times"></i>
+                </button>
+              </h5>
+              <p class="secondary-font-color">
+                Keep up-to-date with all our latest deals and offers via Email or SMS so you don't miss out!
+              </p>
+            </div>
+
+            <div class="container-fluid d-flex flex-column gap-2">
+              <p class="semi-bold">How can we get in touch with you?</p>
+              <form class="d-flex gap-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="contactMethod" id="emailOption" value="email" onclick="submitForm(event)">
+                  <label class="form-check-label secondary-font-color" for="emailOption">
+                    Email
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="contactMethod" id="smsOption" value="sms" onclick="submitForm(event)">
+                  <label class="form-check-label secondary-font-color" for="smsOption">
+                    SMS
+                  </label>
+                </div>
+              </form>
+            </div>
+        </div>
+      </section>
+      <!-- Deals: End -->
+    </main>
+    <!-- Main: End -->
+
+    <!-- Footer: Start -->
+    <footer id="footer" class="container-fluid d-flex align-items-start justify-content-between bg-white padding-sm">
+      
+      <div class="footer-wrapper container-fluid d-flex w-100">
+
+        <div id="footer-logo" class="container-fluid mb-4">
+          <img class="mb-4" src="./assets/BID_Logo.svg" alt="BID_Logo">
+          <p class="p-xs secondary-font-color">
+            Laptops Direct are part of the Buy It Direct Group; Reg. No. 04171412
+          </p>
+        </div>
+
+        <div id="footer-list" class="container-fluid d-flex justify-content-evenly gap-3">
+          <div>
+            <p class="p-md semi-bold mb-6">Opening times</p>
+            <ul class="d-flex flex-column gap-2">
+              <li><p class="p-md secondary-font-color">Mon-Fri: 08:00 - 17:00</p></li>
+              <li><p class="p-md secondary-font-color">Sat: 10:00 - 16:00</p></li>
+              <li> <p class="p-md secondary-font-color">Sun: Closed</p></li>
+            </ul>
+          </div>
+  
+          <div>
+            <p class="p-md semi-bold mb-6">Help and advice</p>
+            <ul class="d-flex flex-column gap-2">
+              <li><p class="p-md secondary-font-color">03300 412271</p></li>  
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+    </footer>
+    <!-- Footer: End -->
+
+    <!-- Bootstrap Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom script -->
+    <script src="./index.js" defer></script>
+    <script>
+        function byName(name) {
+          return document.getElementsByName(name);
+        }
+
+        function submitForm(event) {
+          const radios = byName("contactMethod");
+
+          let value;
+
+          for (var i = 0; i < radios.length; i++) {
+            if (radios[i].checked) {
+              value = radios[i].value;
+              break;
+            }
+          }
+
+          console.log('VALUE: ', value)
+
+          // Don't prevent the default action if a radio button was clicked
+          if (event.target.type !== "radio") {
+            event.preventDefault();
+          }
+        }
+    </script>
+  </body>
+</html>
