@@ -208,6 +208,46 @@ h5 {
   }
 }
 
+.btn-secondary {
+  position: relative;
+  color: $neutral-500;
+  background-color: $shade-white;
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+  i,
+  span {
+    margin-right: 0.5rem;
+  }
+
+  &.active,
+  &:focus,
+  &:hover {
+    color: $neutral-900;
+    background: $neutral-300;
+  }
+}
+
+// notification bubble
+.notification {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 20px;
+  height: 20px;
+
+  color: $shade-white;
+
+  border-radius: 50%;
+  background-color: $dark-blue-500;
+}
+
 // button icon
 .btn-icon {
   display: flex;
@@ -295,7 +335,9 @@ h5 {
   & .navbar-nav {
     .nav-item {
       .nav-link {
+        position: relative;
         color: $neutral-500;
+
         i,
         span {
           margin-right: 0.5rem;

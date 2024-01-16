@@ -3,6 +3,19 @@ document.addEventListener("DOMContentLoaded", function () {
     return document.getElementById(id);
   }
 
+  const toggeableElements = document.querySelectorAll(".toggleable");
+
+  // Select the navbar-toggle element
+  const navbarToggle = document.querySelector(".navbar-toggler");
+
+  // Add click event listener
+  navbarToggle.addEventListener("click", () => {
+    // hide/show of toggeable elements at the bottom of the menu
+    toggeableElements.forEach((element) => {
+      element.classList.toggle("d-none");
+    });
+  });
+
   byId("view-orders").addEventListener("click", function () {
     // Code to execute when "viewOrders" is clicked
     console.log("view orders clicked");

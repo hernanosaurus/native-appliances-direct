@@ -172,6 +172,37 @@ h5 {
   background-color: #02050e;
 }
 
+.btn-secondary {
+  position: relative;
+  color: #71717a;
+  background-color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.btn-secondary i,
+.btn-secondary span {
+  margin-right: 0.5rem;
+}
+.btn-secondary.active, .btn-secondary:focus, .btn-secondary:hover {
+  color: #18181b;
+  background: #f4f4f5;
+}
+
+.notification {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+  border-radius: 50%;
+  background-color: #081a44;
+}
+
 .btn-icon {
   display: flex;
   justify-content: center;
@@ -241,6 +272,7 @@ h5 {
   font-size: 1rem;
 }
 .navbar .navbar-nav .nav-item .nav-link {
+  position: relative;
   color: #71717a;
 }
 .navbar .navbar-nav .nav-item .nav-link i,
